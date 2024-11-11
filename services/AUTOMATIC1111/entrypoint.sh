@@ -74,7 +74,6 @@ for installscript in "${list[@]}"; do
   fi
   PYTHONPATH=${ROOT} python "$installscript"
 done
-
 if [ -f "/data/config/auto/startup.sh" ]; then
   pushd ${ROOT}
   echo "Running startup script"
